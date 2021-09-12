@@ -3,8 +3,6 @@ from bs4 import BeautifulSoup
 import json
 import argparse
 import sys
-import numbers
-import os
 
 # TODO: This is breaks if I change the files position
 if sys.platform == "win32":
@@ -110,6 +108,64 @@ def scrape_manhuascan(text, url, name):
         exit(0)
 
 
+def scrape_hni_scantrad(text, url, name):
+    try:
+        soup = BeautifulSoup(text, "lxml")
+        last_entry_url = (
+            soup.find_all("div", {"class": "element"})[0]
+            .find("div", {"class": "title"})
+            .a["href"]
+        )
+        if url == last_entry_url:
+            print("Nothing new (-_-)")
+            return url
+        else:
+            print("Manga Update Found: \t\t" + name + "\t\t" + last_entry_url)
+            return last_entry_url
+    except IndexError as e:
+        print(name + " has a problem")
+        print(e)
+    except KeyboardInterrupt:
+        exit(0)
+
+
+def scrape_jujutsukaisenhd(text, url, name):
+    try:
+        soup = BeautifulSoup(text, "lxml")
+        last_entry_url = soup.find_all("li")[9].a["href"]
+        if url == last_entry_url:
+            print("Nothing new (-_-)")
+            return url
+        else:
+            r = requests.get(last_entry_url)
+            if "Soon" in r.text:
+                return url
+            print("Manga Update Found: \t\t" + name + "\t\t" + last_entry_url)
+            return last_entry_url
+    except IndexError as e:
+        print(name + " has a problem")
+        print(e)
+    except KeyboardInterrupt:
+        exit(0)
+
+
+def scrape_readmanganato(text, url, name):
+    try:
+        soup = BeautifulSoup(text, "lxml")
+        last_entry_url = soup.find_all("a", {"class": "chapter-name"})[0]["href"]
+        if url == last_entry_url:
+            print("Nothing new (-_-)")
+            return url
+        else:
+            print("Manga Update Found: \t\t" + name + "\t\t" + last_entry_url)
+            return last_entry_url
+    except IndexError as e:
+        print(name + " has a problem")
+        print(e)
+    except KeyboardInterrupt:
+        exit(0)
+
+
 def check_for_updates(file):
     data = json.load(file)
     # TODO: Probably a design pattern is needed here
@@ -135,9 +191,15 @@ def check_for_updates(file):
                     el["url"] = scrape_read_boruto(text, url, name)
                 elif website == "manhuascan":
                     el["url"] = scrape_manhuascan(text, url, name)
+                elif website == "hni-scantrad":
+                    el["url"] = scrape_hni_scantrad(text, url, name)
+                elif website == "jujutsukaisenhd":
+                    el["url"] = scrape_jujutsukaisenhd(text, url, name)
+                elif website == "readmanganato":
+                    el["url"] = scrape_readmanganato(text, url, name)
                 else:
-                    print("Website not supported")
-                    exit(0)
+                    print("{} not supported".format(website))
+                    # exit(0)
 
         except requests.exceptions.RequestException as e:
             print(e)
