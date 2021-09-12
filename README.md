@@ -19,7 +19,7 @@ It's a json file stores the manga related _info_ that I need to keep track of wh
 
 Run
 
-```
+```bash
 $ python manga_checker
 Nothing new (-_-)
 Nothing new (-_-)
@@ -55,9 +55,9 @@ Nothing new (-_-)
 Nothing new (-_-)
 ```
 
-Add new manga (interactive)
+Add new manga
 
-```
+```bash
 $ manga_checker -n
 website: mangakakalot
 manga_url: https://mangakakalot.com/read-aq1cl158504930275
@@ -67,12 +67,12 @@ url: https://mangakakalot.com/chapter/kings_viking/chapter_80
 
 List manga alphabetically
 
-```
+```bash
 $ manga_checker -l
 ```
 
 Count manga
 
-```
+```bash
 $ manga_checker -c
 ```
