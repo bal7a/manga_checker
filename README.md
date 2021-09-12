@@ -57,7 +57,7 @@ Nothing new (-_-)
 
 Add new manga
 
-```bash
+```
 $ manga_checker -n
 website: mangakakalot
 manga_url: https://mangakakalot.com/read-aq1cl158504930275
