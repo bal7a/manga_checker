@@ -10,197 +10,37 @@ if sys.platform == "win32":
 else:
     JSON_FILE = "/mnt/g/Baka/Repos/my_projects/manga_checker/site_obj.json"
 
-
-def scrape_managakalot(text, url, name):
-    try:
-        soup = BeautifulSoup(text, "lxml")
-        all_chapter_elements = soup.find_all("div", {"class": "row"})
-        last_entry_url = all_chapter_elements[1].a["href"]
-        if url == last_entry_url:
-            print("Nothing new (-_-)")
-            return url
-        else:
-            print("Manga Update Found: \t\t" + name + "\t\t" + last_entry_url)
-            return last_entry_url
-    except IndexError as e:
-        print(name + " has a problem")
-        print(e)
-    except KeyboardInterrupt:
-        exit(0)
-
-
-def scrape_manganelo(text, url, name):
-    try:
-        soup = BeautifulSoup(text, "lxml")
-        all_chapter_elements = soup.find_all("li", {"class": "a-h"})
-        last_entry_url = all_chapter_elements[0].a["href"]
-        if url == last_entry_url:
-            print("Nothing new (-_-)")
-            return url
-        else:
-            print("Manga Update Found: \t\t" + name + "\t\t" + last_entry_url)
-            return last_entry_url
-    except IndexError as e:
-        print(name + " has a problem")
-        print(e)
-    except KeyboardInterrupt:
-        exit(0)
-
-
-def scrape_readheroacademia(text, url, name):
-    try:
-        soup = BeautifulSoup(text, "lxml")
-        last_entry_url = soup.find_all("td")[0].a["href"]
-        if url == last_entry_url:
-            print("Nothing new (-_-)")
-            return url
-        else:
-            r = requests.get(last_entry_url)
-            if "Countdown" in r.text:
-                print("Nothing new (-_-)")
-                return url
-            else:
-                print("Manga Update Found: \t\t" + name + "\t\t" + last_entry_url)
-                return last_entry_url
-    except IndexError as e:
-        print(name + " has a problem")
-        print(e)
-    except KeyboardInterrupt:
-        exit(0)
-
-
-def scrape_read_boruto(text, url, name):
-    try:
-        soup = BeautifulSoup(text, "lxml")
-        last_entry_url = soup.find_all("li", {"class": "row"})[0].div.a["href"]
-
-        if url == last_entry_url:
-            print("Nothing new (-_-)")
-            return url
-        else:
-            print("Manga Update Found: \t\t" + name + "\t\t" + last_entry_url)
-            return last_entry_url
-    except IndexError as e:
-        print(name + " has a problem")
-        print(e)
-    except KeyboardInterrupt:
-        exit(0)
-
-
-def scrape_manhuascan(text, url, name):
-    try:
-        soup = BeautifulSoup(text, "lxml")
-        last_entry_url = (
-            "https://manhuascan.com/"
-            + soup.find_all("span", {"class": "title"})[0].a["href"]
-        )
-
-        if url == last_entry_url:
-            print("Nothing new (-_-)")
-            return url
-        else:
-            print("Manga Update Found: \t\t" + name + "\t\t" + last_entry_url)
-            return last_entry_url
-    except IndexError as e:
-        print(name + " has a problem")
-        print(e)
-    except KeyboardInterrupt:
-        exit(0)
-
-
-def scrape_hni_scantrad(text, url, name):
-    try:
-        soup = BeautifulSoup(text, "lxml")
-        last_entry_url = (
-            soup.find_all("div", {"class": "element"})[0]
-            .find("div", {"class": "title"})
-            .a["href"]
-        )
-        if url == last_entry_url:
-            print("Nothing new (-_-)")
-            return url
-        else:
-            print("Manga Update Found: \t\t" + name + "\t\t" + last_entry_url)
-            return last_entry_url
-    except IndexError as e:
-        print(name + " has a problem")
-        print(e)
-    except KeyboardInterrupt:
-        exit(0)
-
-
-def scrape_jujutsukaisenhd(text, url, name):
-    try:
-        soup = BeautifulSoup(text, "lxml")
-        last_entry_url = soup.find_all("li")[9].a["href"]
-        if url == last_entry_url:
-            print("Nothing new (-_-)")
-            return url
-        else:
-            r = requests.get(last_entry_url)
-            if "Soon" in r.text:
-                return url
-            print("Manga Update Found: \t\t" + name + "\t\t" + last_entry_url)
-            return last_entry_url
-    except IndexError as e:
-        print(name + " has a problem")
-        print(e)
-    except KeyboardInterrupt:
-        exit(0)
-
-
-def scrape_readmanganato(text, url, name):
-    try:
-        soup = BeautifulSoup(text, "lxml")
-        last_entry_url = soup.find_all("a", {"class": "chapter-name"})[0]["href"]
-        if url == last_entry_url:
-            print("Nothing new (-_-)")
-            return url
-        else:
-            print("Manga Update Found: \t\t" + name + "\t\t" + last_entry_url)
-            return last_entry_url
-    except IndexError as e:
-        print(name + " has a problem")
-        print(e)
-    except KeyboardInterrupt:
-        exit(0)
+MIN_MANGA_PANEL = 3
 
 
 def check_for_updates(file):
     data = json.load(file)
-    # TODO: Probably a design pattern is needed here
-
     for _, el in enumerate(data["sites"]):
         website = el["website"]
         manga_url = el["manga_url"]
         url = el["url"]
         name = el["name"]
+        css_selector = el["css_selector"]
 
         try:
             r = requests.get(manga_url)
             text = r.text
+            soup = BeautifulSoup(text, "lxml")
 
             if r.ok:
-                if website == "mangakakalot":
-                    el["url"] = scrape_managakalot(text, url, name)
-                elif website == "manganelo":
-                    el["url"] = scrape_manganelo(text, url, name)
-                elif website == "readheroacademia":
-                    el["url"] = scrape_readheroacademia(text, url, name)
-                elif website == "read-boruto":
-                    el["url"] = scrape_read_boruto(text, url, name)
-                elif website == "manhuascan":
-                    el["url"] = scrape_manhuascan(text, url, name)
-                elif website == "hni-scantrad":
-                    el["url"] = scrape_hni_scantrad(text, url, name)
-                elif website == "jujutsukaisenhd":
-                    el["url"] = scrape_jujutsukaisenhd(text, url, name)
-                elif website == "readmanganato":
-                    el["url"] = scrape_readmanganato(text, url, name)
+                last_entry_url = soup.select(css_selector)[0]["href"]
+                if not last_entry_url.startswith("https"):
+                    last_entry_url = "https://" + website + ".com/" + last_entry_url
+                if url == last_entry_url:
+                    print("Nothing new (-_-)")
                 else:
-                    print("{} not supported".format(website))
-                    # exit(0)
-
+                    r = requests.get(last_entry_url)
+                    soup = BeautifulSoup(r.text, "lxml")
+                    if len(soup.find_all("img")) > MIN_MANGA_PANEL:
+                        print(
+                            "Manga Update Found: \t\t" + name + "\t\t" + last_entry_url
+                        )
+                        url = last_entry_url
         except requests.exceptions.RequestException as e:
             print(e)
         except KeyboardInterrupt:
