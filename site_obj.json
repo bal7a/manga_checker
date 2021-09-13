@@ -1,242 +1,242 @@
 {
-  "sites": [
-    {
-      "website": "manhuascan",
-      "manga_url": "https://manhuascan.com/manga-kings-viking.html",
-      "name": "Kings' Viking",
-      "url": "https://manhuascan.com/read-kings-viking-chapter-89.html",
-      "css_selector": "#list-chapters > p:nth-child(2) > span.title > a"
-    },
-    {
-      "website": "hni-scantrad",
-      "manga_url": "https://hni-scantrad.com/lel/series/hajime-no-ippo/",
-      "name": "Hajime No Ippo",
-      "url": "https://hni-scantrad.com/lel/read/hajime-no-ippo/en-us/133/1353/",
-      "css_selector": "#content > div > div.list > div:nth-child(2) > div:nth-child(3) > div.title > a"
-    },
-    {
-      "website": "readheroacademia",
-      "manga_url": "https://w23.readheroacademia.com/",
-      "name": "Boku no Hero Academia",
-      "url": "https://w27.readheroacademia.com/manga/boku-no-hero-academia-chapter-325-bean-version/",
-      "css_selector": "#main > div.chapter_coin > ul > table > tr:nth-child(1) > td:nth-child(1) > a"
-    },
-    {
-      "website": "manganelo",
-      "manga_url": "https://manganelo.com/manga/ilsi12001567132882",
-      "name": "Berserk",
-      "url": "https://readmanganato.com/manga-ma952557/chapter-364",
-      "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
-    },
-    {
-      "website": "manganelo",
-      "manga_url": "https://manganelo.com/manga/rikudou",
-      "name": "Rikudou",
-      "url": "https://readmanganato.com/manga-ou952777/chapter-100",
-      "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
-    },
-    {
-      "website": "manganelo",
-      "manga_url": "https://manganelo.com/manga/kingdom",
-      "name": "Kingdom",
-      "url": "https://readmanganato.com/manga-qi951517/chapter-690",
-      "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
-    },
-    {
-      "website": "manganelo",
-      "manga_url": "https://manganelo.com/manga/kaguyasama_wa_kokurasetai_tensaitachi_no_renai_zunousen",
-      "name": "Kaguya-sama wa Kokurasetai - Tensai-tachi no Renai Zunousen",
-      "url": "https://readmanganato.com/manga-nc952011/chapter-236",
-      "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
-    },
-    {
-      "website": "manganelo",
-      "manga_url": "https://manganelo.com/manga/kono_oto_tomare",
-      "name": "Kono Oto Tomare!",
-      "url": "https://readmanganato.com/manga-tf953314/chapter-105",
-      "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
-    },
-    {
-      "website": "manganelo",
-      "manga_url": "https://manganelo.com/manga/allrounder_meguru",
-      "name": "All-Rounder Meguru",
-      "url": "https://readmanganato.com/manga-ys953827/chapter-142",
-      "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
-    },
-    {
-      "website": "manganelo",
-      "manga_url": "https://manganelo.com/manga/gangsta",
-      "name": "Gangsta",
-      "url": "https://readmanganato.com/manga-zl953868/chapter-56",
-      "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
-    },
-    {
-      "website": "manganelo",
-      "manga_url": "https://manganelo.com/manga/read_detective_conan_manga_online_free",
-      "name": "Detective Conan",
-      "url": "https://readmanganato.com/manga-xm951847/chapter-1078",
-      "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
-    },
-    {
-      "website": "mangakakalot",
-      "manga_url": "https://mangakakalot.com/manga/iv924507",
-      "name": "Living in an Abandoned Bus",
-      "url": "https://mangakakalot.com/chapter/iv924507/chapter_6",
-      "css_selector": "#chapter > div > div.chapter-list > div:nth-child(1) > span:nth-child(1) > a"
-    },
-    {
-      "website": "readmanganato",
-      "manga_url": "https://readmanganato.com/manga-hp985272",
-      "name": "Are You Really Getting Married?",
-      "url": "https://readmanganato.com/manga-hp985272/chapter-50",
-      "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
-    },
-    {
-      "website": "mangakakalot",
-      "manga_url": "https://mangakakalot.com/read-zc0ov158504949180",
-      "name": "Issak",
-      "url": "https://mangakakalot.com/chapter/issak/chapter_31",
-      "css_selector": "#chapter > div > div.chapter-list > div:nth-child(1) > span:nth-child(1) > a"
-    },
-    {
-      "website": "mangakakalot",
-      "manga_url": "https://mangakakalot.com/manga/oz924491",
-      "name": "Crazy Food Truck",
-      "url": "https://mangakakalot.com/chapter/oz924491/chapter_7",
-      "css_selector": "#chapter > div > div.chapter-list > div:nth-child(1) > span:nth-child(1) > a"
-    },
-    {
-      "website": "manhuascan",
-      "manga_url": "https://manhuascan.com/manga-spy-x-family-official-version.html",
-      "name": "SPY x FAMILY",
-      "url": "https://manhuascan.com/read-spy-x-family-official-version-chapter-52.html",
-      "css_selector": "#list-chapters > p:nth-child(1) > span.title > a"
-    },
-    {
-      "website": "mangakakalot",
-      "manga_url": "https://mangakakalot.com/manga/ou921190",
-      "name": "Fermat's Cuisine",
-      "url": "https://mangakakalot.com/chapter/ou921190/chapter_4",
-      "css_selector": "#chapter > div > div.chapter-list > div:nth-child(1) > span:nth-child(1) > a"
-    },
-    {
-      "website": "manganelo",
-      "manga_url": "https://manganelo.com/manga/dp918434",
-      "name": "Blue Period",
-      "url": "https://readmanganato.com/manga-du980903/chapter-45",
-      "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
-    },
-    {
-      "website": "manganelo",
-      "manga_url": "https://manganelo.com/manga/eu917590",
-      "name": "The Fable",
-      "url": "https://readmanganato.com/manga-cc980059/chapter-91",
-      "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
-    },
-    {
-      "website": "manganelo",
-      "manga_url": "https://manganelo.com/manga/uv917720",
-      "name": "Fairy Tail: 100 Years Quest",
-      "url": "https://readmanganato.com/manga-cg980189/chapter-90",
-      "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
-    },
-    {
-      "website": "manganelo",
-      "manga_url": "https://manganelo.com/manga/vinland_saga",
-      "name": "Vinland Saga",
-      "url": "https://readmanganato.com/manga-se951539/chapter-185",
-      "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
-    },
-    {
-      "website": "mangakakalot",
-      "manga_url": "https://mangakakalot.com/manga/qu923014",
-      "name": "Brutal: Satsujin Kansatsukan no Kokuhaku",
-      "url": "https://mangakakalot.com/chapter/qu923014/chapter_12",
-      "css_selector": "#chapter > div > div.chapter-list > div:nth-child(1) > span:nth-child(1) > a"
-    },
-    {
-      "website": "manganelo",
-      "manga_url": "https://manganelo.com/manga/vy918232",
-      "name": "Record of Ragnarok",
-      "url": "https://readmanganato.com/manga-ds980701/chapter-51",
-      "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
-    },
-    {
-      "website": "manganelo",
-      "manga_url": "https://manganelo.com/manga/bungou_stray_dogs",
-      "name": "Bungou Stray Dogs",
-      "url": "https://readmanganato.com/manga-ls952253/chapter-94.5",
-      "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
-    },
-    {
-      "website": "manganelo",
-      "manga_url": "https://manganelo.com/manga/fy923056",
-      "name": "The Boxer",
-      "url": "https://readmanganato.com/manga-iq985525/chapter-58",
-      "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
-    },
-    {
-      "website": "mangakakalot",
-      "manga_url": "https://mangakakalot.com/manga/fd922931",
-      "name": "Ame to Kimi to",
-      "url": "https://mangakakalot.com/chapter/fd922931/chapter_41",
-      "css_selector": "#chapter > div > div.chapter-list > div:nth-child(1) > span:nth-child(1) > a"
-    },
-    {
-      "website": "manganelo",
-      "manga_url": "https://manganelo.com/manga/wotaku_ni_koi_wa_muzukashii",
-      "name": "Wotaku Ni Koi Wa Muzukashii",
-      "url": "https://readmanganato.com/manga-mm952647/chapter-70",
-      "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
-    },
-    {
-      "website": "readmanganato",
-      "manga_url": "https://readmanganato.com/manga-fy982581",
-      "name": "Futari Solo Camp",
-      "url": "https://readmanganato.com/manga-fy982581/chapter-23",
-      "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
-    },
-    {
-      "website": "mangakakalot",
-      "manga_url": "https://mangakakalot.com/read-sx3vo158504919791",
-      "name": "From Now on We Begin Ethics.",
-      "url": "https://mangakakalot.com/chapter/jh920014/chapter_26",
-      "css_selector": "#chapter > div > div.chapter-list > div:nth-child(1) > span:nth-child(1) > a"
-    },
-    {
-      "website": "mangakakalot",
-      "manga_url": "https://mangakakalot.com/read-ni3oz158504900092",
-      "name": "Gunka no Baltzar",
-      "url": "https://mangakakalot.com/chapter/gunka_no_baltzar/chapter_69",
-      "css_selector": "#chapter > div > div.chapter-list > div:nth-child(1) > span:nth-child(1) > a"
-    },
-    {
-      "website": "manganelo",
-      "manga_url": "https://manganelo.com/manga/drifters",
-      "name": "Drifters",
-      "url": "https://readmanganato.com/manga-kv952404/chapter-83",
-      "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
-    },
-    {
-      "website": "read-boruto",
-      "manga_url": "https://read-boruto.online/",
-      "name": "Boruto: Naruto Next Generations Manga",
-      "url": "https://read-boruto.online/manga/boruto-naruto-next-generations-manga-chapter-62/",
-      "css_selector": "body > div.wrap > div > div.site-content > div > div.c-page-content.style-1 > div > div > div > div > div > div > div > div.page-content-listing.single-page > div > ul > li:nth-child(1) > div:nth-child(1) > a"
-    },
-    {
-      "website": "mangakakalot",
-      "manga_url": "https://mangakakalot.com/manga/hn926066",
-      "name": "Mathematics Golden",
-      "url": "https://mangakakalot.com/chapter/hn926066/chapter_12",
-      "css_selector": "#chapter > div > div.chapter-list > div:nth-child(1) > span:nth-child(1) > a"
-    },
-    {
-      "website": "jujutsukaisenhd",
-      "manga_url": "https://jujutsukaisenhd.com/",
-      "name": "Jujutsu Kaisen",
-      "url": "https://jujutsukaisenhd.com/manga/jujutsu-kaisen-chapter-154/",
-      "css_selector": "#ceo_latest_comics_widget-3 > ul > li:nth-child(1) > a"
-    }
-  ]
+    "sites": [
+        {
+            "website": "manhuascan",
+            "manga_url": "https://manhuascan.com/manga-kings-viking.html",
+            "name": "Kings' Viking",
+            "url": "https://manhuascan.com/read-kings-viking-chapter-89.html",
+            "css_selector": "#list-chapters > p:nth-child(1) > span.title > a"
+        },
+        {
+            "website": "hni-scantrad",
+            "manga_url": "https://hni-scantrad.com/lel/series/hajime-no-ippo/",
+            "name": "Hajime No Ippo",
+            "url": "https://hni-scantrad.com/lel/read/hajime-no-ippo/en-us/133/1353/",
+            "css_selector": "#content > div > div.list > div:nth-child(2) > div:nth-child(3) > div.title > a"
+        },
+        {
+            "website": "readheroacademia",
+            "manga_url": "https://w23.readheroacademia.com/",
+            "name": "Boku no Hero Academia",
+            "url": "https://w27.readheroacademia.com/manga/boku-no-hero-academia-chapter-325-bean-version/",
+            "css_selector": "#main > div.chapter_coin > ul > table > tr:nth-child(1) > td:nth-child(1) > a"
+        },
+        {
+            "website": "manganelo",
+            "manga_url": "https://manganelo.com/manga/ilsi12001567132882",
+            "name": "Berserk",
+            "url": "https://readmanganato.com/manga-ma952557/chapter-364",
+            "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
+        },
+        {
+            "website": "manganelo",
+            "manga_url": "https://manganelo.com/manga/rikudou",
+            "name": "Rikudou",
+            "url": "https://readmanganato.com/manga-ou952777/chapter-100",
+            "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
+        },
+        {
+            "website": "manganelo",
+            "manga_url": "https://manganelo.com/manga/kingdom",
+            "name": "Kingdom",
+            "url": "https://readmanganato.com/manga-qi951517/chapter-690",
+            "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
+        },
+        {
+            "website": "manganelo",
+            "manga_url": "https://manganelo.com/manga/kaguyasama_wa_kokurasetai_tensaitachi_no_renai_zunousen",
+            "name": "Kaguya-sama wa Kokurasetai - Tensai-tachi no Renai Zunousen",
+            "url": "https://readmanganato.com/manga-nc952011/chapter-236",
+            "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
+        },
+        {
+            "website": "manganelo",
+            "manga_url": "https://manganelo.com/manga/kono_oto_tomare",
+            "name": "Kono Oto Tomare!",
+            "url": "https://readmanganato.com/manga-tf953314/chapter-105",
+            "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
+        },
+        {
+            "website": "manganelo",
+            "manga_url": "https://manganelo.com/manga/allrounder_meguru",
+            "name": "All-Rounder Meguru",
+            "url": "https://readmanganato.com/manga-ys953827/chapter-142",
+            "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
+        },
+        {
+            "website": "manganelo",
+            "manga_url": "https://manganelo.com/manga/gangsta",
+            "name": "Gangsta",
+            "url": "https://readmanganato.com/manga-zl953868/chapter-56",
+            "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
+        },
+        {
+            "website": "manganelo",
+            "manga_url": "https://manganelo.com/manga/read_detective_conan_manga_online_free",
+            "name": "Detective Conan",
+            "url": "https://readmanganato.com/manga-xm951847/chapter-1078",
+            "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
+        },
+        {
+            "website": "mangakakalot",
+            "manga_url": "https://mangakakalot.com/manga/iv924507",
+            "name": "Living in an Abandoned Bus",
+            "url": "https://mangakakalot.com/chapter/iv924507/chapter_6",
+            "css_selector": "#chapter > div > div.chapter-list > div:nth-child(1) > span:nth-child(1) > a"
+        },
+        {
+            "website": "readmanganato",
+            "manga_url": "https://readmanganato.com/manga-hp985272",
+            "name": "Are You Really Getting Married?",
+            "url": "https://readmanganato.com/manga-hp985272/chapter-50",
+            "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
+        },
+        {
+            "website": "mangakakalot",
+            "manga_url": "https://mangakakalot.com/read-zc0ov158504949180",
+            "name": "Issak",
+            "url": "https://mangakakalot.com/chapter/issak/chapter_31",
+            "css_selector": "#chapter > div > div.chapter-list > div:nth-child(1) > span:nth-child(1) > a"
+        },
+        {
+            "website": "mangakakalot",
+            "manga_url": "https://mangakakalot.com/manga/oz924491",
+            "name": "Crazy Food Truck",
+            "url": "https://mangakakalot.com/chapter/oz924491/chapter_7",
+            "css_selector": "#chapter > div > div.chapter-list > div:nth-child(1) > span:nth-child(1) > a"
+        },
+        {
+            "website": "manhuascan",
+            "manga_url": "https://manhuascan.com/manga-spy-x-family-official-version.html",
+            "name": "SPY x FAMILY",
+            "url": "https://manhuascan.com/read-spy-x-family-official-version-chapter-52.html",
+            "css_selector": "#list-chapters > p:nth-child(1) > span.title > a"
+        },
+        {
+            "website": "mangakakalot",
+            "manga_url": "https://mangakakalot.com/manga/ou921190",
+            "name": "Fermat's Cuisine",
+            "url": "https://mangakakalot.com/chapter/ou921190/chapter_4",
+            "css_selector": "#chapter > div > div.chapter-list > div:nth-child(1) > span:nth-child(1) > a"
+        },
+        {
+            "website": "manganelo",
+            "manga_url": "https://manganelo.com/manga/dp918434",
+            "name": "Blue Period",
+            "url": "https://readmanganato.com/manga-du980903/chapter-45",
+            "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
+        },
+        {
+            "website": "manganelo",
+            "manga_url": "https://manganelo.com/manga/eu917590",
+            "name": "The Fable",
+            "url": "https://readmanganato.com/manga-cc980059/chapter-91",
+            "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
+        },
+        {
+            "website": "manganelo",
+            "manga_url": "https://manganelo.com/manga/uv917720",
+            "name": "Fairy Tail: 100 Years Quest",
+            "url": "https://readmanganato.com/manga-cg980189/chapter-90",
+            "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
+        },
+        {
+            "website": "manganelo",
+            "manga_url": "https://manganelo.com/manga/vinland_saga",
+            "name": "Vinland Saga",
+            "url": "https://readmanganato.com/manga-se951539/chapter-185",
+            "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
+        },
+        {
+            "website": "mangakakalot",
+            "manga_url": "https://mangakakalot.com/manga/qu923014",
+            "name": "Brutal: Satsujin Kansatsukan no Kokuhaku",
+            "url": "https://mangakakalot.com/chapter/qu923014/chapter_12",
+            "css_selector": "#chapter > div > div.chapter-list > div:nth-child(1) > span:nth-child(1) > a"
+        },
+        {
+            "website": "manganelo",
+            "manga_url": "https://manganelo.com/manga/vy918232",
+            "name": "Record of Ragnarok",
+            "url": "https://readmanganato.com/manga-ds980701/chapter-51",
+            "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
+        },
+        {
+            "website": "manganelo",
+            "manga_url": "https://manganelo.com/manga/bungou_stray_dogs",
+            "name": "Bungou Stray Dogs",
+            "url": "https://readmanganato.com/manga-ls952253/chapter-94.5",
+            "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
+        },
+        {
+            "website": "manganelo",
+            "manga_url": "https://manganelo.com/manga/fy923056",
+            "name": "The Boxer",
+            "url": "https://readmanganato.com/manga-iq985525/chapter-58",
+            "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
+        },
+        {
+            "website": "mangakakalot",
+            "manga_url": "https://mangakakalot.com/manga/fd922931",
+            "name": "Ame to Kimi to",
+            "url": "https://mangakakalot.com/chapter/fd922931/chapter_41",
+            "css_selector": "#chapter > div > div.chapter-list > div:nth-child(1) > span:nth-child(1) > a"
+        },
+        {
+            "website": "manganelo",
+            "manga_url": "https://manganelo.com/manga/wotaku_ni_koi_wa_muzukashii",
+            "name": "Wotaku Ni Koi Wa Muzukashii",
+            "url": "https://readmanganato.com/manga-mm952647/chapter-70",
+            "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
+        },
+        {
+            "website": "readmanganato",
+            "manga_url": "https://readmanganato.com/manga-fy982581",
+            "name": "Futari Solo Camp",
+            "url": "https://readmanganato.com/manga-fy982581/chapter-23",
+            "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
+        },
+        {
+            "website": "mangakakalot",
+            "manga_url": "https://mangakakalot.com/read-sx3vo158504919791",
+            "name": "From Now on We Begin Ethics.",
+            "url": "https://mangakakalot.com/chapter/jh920014/chapter_26",
+            "css_selector": "#chapter > div > div.chapter-list > div:nth-child(1) > span:nth-child(1) > a"
+        },
+        {
+            "website": "mangakakalot",
+            "manga_url": "https://mangakakalot.com/read-ni3oz158504900092",
+            "name": "Gunka no Baltzar",
+            "url": "https://mangakakalot.com/chapter/gunka_no_baltzar/chapter_69",
+            "css_selector": "#chapter > div > div.chapter-list > div:nth-child(1) > span:nth-child(1) > a"
+        },
+        {
+            "website": "manganelo",
+            "manga_url": "https://manganelo.com/manga/drifters",
+            "name": "Drifters",
+            "url": "https://readmanganato.com/manga-kv952404/chapter-83",
+            "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
+        },
+        {
+            "website": "read-boruto",
+            "manga_url": "https://read-boruto.online/",
+            "name": "Boruto: Naruto Next Generations Manga",
+            "url": "https://read-boruto.online/manga/boruto-naruto-next-generations-manga-chapter-62/",
+            "css_selector": "body > div.wrap > div > div.site-content > div > div.c-page-content.style-1 > div > div > div > div > div > div > div > div.page-content-listing.single-page > div > ul > li:nth-child(1) > div:nth-child(1) > a"
+        },
+        {
+            "website": "mangakakalot",
+            "manga_url": "https://mangakakalot.com/manga/hn926066",
+            "name": "Mathematics Golden",
+            "url": "https://mangakakalot.com/chapter/hn926066/chapter_12",
+            "css_selector": "#chapter > div > div.chapter-list > div:nth-child(1) > span:nth-child(1) > a"
+        },
+        {
+            "website": "jujutsukaisenhd",
+            "manga_url": "https://jujutsukaisenhd.com/",
+            "name": "Jujutsu Kaisen",
+            "url": "https://jujutsukaisenhd.com/manga/jujutsu-kaisen-chapter-154/",
+            "css_selector": "#ceo_latest_comics_widget-3 > ul > li:nth-child(1) > a"
+        }
+    ]
 }
